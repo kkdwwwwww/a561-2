@@ -128,7 +128,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier, rx: Float, ry: Float) 
         })
     }
     if(qs.isEmpty()) return
-    var qIdx by remember { mutableStateOf(Random.nextInt(5)) }
+    var qIdx by remember { mutableStateOf(Random.nextInt(10)) }
     var qqIdx by remember { mutableStateOf(0) }
     var sc by remember { mutableStateOf(0) }
     var page by remember { mutableStateOf(0) }
@@ -163,7 +163,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier, rx: Float, ry: Float) 
                     }
                     pt = 0f
                     cp = Offset(w/2,h/2)
-                    qIdx = Random.nextInt(5)
+                    qIdx = Random.nextInt(10)
                     qqIdx++
                     if(qqIdx>=10){
                         page = 1
